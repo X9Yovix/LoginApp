@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LoginApp.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ScrollView>
+        <StackLayout
+            Padding="10"
+            BackgroundColor="Purple"
+            Orientation="Vertical"
+            VerticalOptions="Center">
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="Login"
+                TextColor="Red" />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Username" TextColor="Wheat" />
+                <Entry HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Password" TextColor="Wheat" />
+                <Entry HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+            <Button Text="Login in" />
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="Staklayout"
+                TextColor="Red" />
+            <Entry />
+            <Button Text="Click here" />
+            <Stepper />
+            <Slider />
+            <BoxView BackgroundColor="Green" />
+            <Label
+                HorizontalTextAlignment="Center"
+                Text="Display Message"
+                TextColor="Red" />
+            <Entry x:Name="textName" />
+            <Label x:Name="lblMessage" />
+            <Button Clicked="DisplayMessage" Text="Show Message" />
+            <Button Text="okeh" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
