@@ -27,7 +27,7 @@
                 Text="Staklayout"
                 TextColor="Red" />
             <Entry />
-            <Button Text="Click here" />
+            <Button Text="Click here &#128165;" />
             <Stepper />
             <Slider />
             <BoxView BackgroundColor="Green" />
@@ -35,10 +35,9 @@
                 HorizontalTextAlignment="Center"
                 Text="Display Message"
                 TextColor="Red" />
-            <Entry x:Name="textName" />
+            <Entry x:Name="textName" Placeholder="Enter your name" />
             <Label x:Name="lblMessage" />
             <Button Clicked="DisplayMessage" Text="Show Message" />
-            <Button Text="okeh" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

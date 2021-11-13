@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -10,16 +11,25 @@ namespace LoginApp
 {
     public partial class MainPage : ContentPage
     {
+        
         public MainPage()
         {
             InitializeComponent();
         }
 
-        public void DisplayMessage(Object sender, EventArgs e)
+        public async void DisplayMessage(Object sender, EventArgs e)
         {
-            lblMessage.Text = "Welcome " + textName.Text;
-            lblMessage.TextColor = Color.White; 
-            lblMessage.BackgroundColor = Color.Orange;
+            if (String.IsNullOrEmpty(textName.Text))
+            {
+                await DisplayAlert("Warning", "you forgot to enter you name!", "OK");
+            }
+            else
+            {
+                lblMessage.Text = "Welcome " + textName.Text;
+                lblMessage.TextColor = Color.White;
+                lblMessage.BackgroundColor = Color.Orange;
+            }
+            
         }
     }
 }
